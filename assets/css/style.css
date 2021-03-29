@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+header {
+  width: 100%;
+  background-color: #28e28b;
+}
+.container-menu {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header-menu ul,
+.social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  object-fit: contain;
+  align-items: center;
+  font-size: 18px;
+}
+.header-menu a,
+.social a {
+  margin-right: 30px;
+}
+.social a {
+  display: inline-block;
+}
+header .social img {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+/*Banner*/
+.container-page {
+  max-width: 1080px;
+  margin: auto;
+  overflow: hidden;
+}
+.banner {
+  height: calc(100% - 80px);
+  background-image: url(../img/banner-page.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 8;
+}
+.banner h1 {
+  font-size: 40px;
+  line-height: 95px;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+.banner p {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.buttons-page {
+  margin-top: 30px;
+}
+.buttons-page a {
+  display: inline-block;
+  border: 1px solid #222121;
+  padding: 10px 35px;
+  background: transparent;
+  margin-right: 30px;
+  color: #222121;
+  text-transform: uppercase;
+}
+.buttons-page a img {
+  margin-right: 10px;
+  height: 16px;
+}
+.footer-banner {
+  padding: 0;
+  margin: 0;
+  background-color: #f5ebeb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.footer-banner span {
+  display: flex;
+}
+.footer-banner span img {
+  max-height: 90px;
+  margin-right: 80px;
+  min-height: 50px;
+}
+.footer-banner span img svg {
+  color: #cac3c3;
+  height: 100%;
+}
+.about-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10px;
+}
+.img-about {
+  max-width: 40%;
+}
+.img-about img {
+  max-width: 90%;
+}
+.content-about {
+  max-width: 55%;
+}
+.content-about h2 {
+  font-size: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.content-about p {
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+.content-about li span {
+  display: flex;
+  align-items: center;
+}
+.content-about li {
+  padding-bottom: 20px;
+}
+.content-about li img {
+  max-width: 20px;
+  margin-right: 20px;
+}
+/*Serviços*/
+
+.services {
+  background: #28e28b;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+.service {
+  display: inline-block;
+  max-width: calc(100% / 3);
+  margin: 20px -4px;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service i {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.service p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.creator-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  text-align: center;
+  margin: auto;
+  max-width: 80%;
+  padding: 100px;
+}
+.creator-page p {
+  line-height: 28px;
+  font-size: 18px;
+}
+.creator-page h3 {
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.contact {
+  background-color: #28e28b;
+  color: #fff;
+  width: 100%;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 60%;
+  padding: 80px;
+}
+.contact-content h4 {
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+.contact-content form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-content input {
+  font-size: 18px;
+  padding: 10px 40px;
+  border: none;
+  outline: 0;
+  min-width: 400px;
+  border-radius: 5px;
+}
+.contact-content form button {
+  border: 0;
+  background: transparent;
+  margin-left: -30px;
+  cursor: pointer;
+}
+.contact-content button img {
+  width: 25px;
+  height: 25px;
+  color: #28e28b;
+}
+::-webkit-input-placeholder {
+  color: #28e28b;
+}
+
+:-moz-placeholder {
+  color: #28e28b;
+}
+
+::-moz-placeholder {
+  color: #28e28b;
+}
+
+:-ms-input-placeholder {
+  color: #28e28b;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 60%;
+  padding: 60px;
+}
+footer .footer-icons {
+  width: 100%;
+}
+footer .footer-icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-icons ul li {
+  margin-right: 40px;
+  padding-bottom: 30px;
+}
+footer .footer-icons ul li img {
+  height: 60px;
+}
+footer .footer-rights span {
+  font-weight: bolder;
+}
+@media screen and (max-width: 690px) {
+  .header-area {
+    padding: 30px;
+  }
+  .header-menu ul,
+  .social ul {
+    font-size: 15px;
+  }
+  header .social img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+  }
+  .banner {
+    padding: 30px;
+  }
+  .banner h1 {
+    font-size: 25px;
+    line-height: 65px;
+    padding-top: 40px;
+  }
+  .banner p {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 50%;
+  }
+  .buttons-page {
+    max-width: 60%;
+  }
+  .buttons-page a {
+    margin-bottom: 30px;
+    padding: 8px 20px;
+  }
+  .footer-banner span img {
+    max-height: 60px;
+    margin-right: 40px;
+    min-height: 30px;
+  }
+  .img-about img {
+    display: none;
+  }
+  .content-about {
+    padding: 30px;
+    max-width: 90%;
+  }
+  .content-about h2 {
+    font-size: 25px;
+    line-height: 35px;
+    padding-top: 20px;
+  }
+  .service {
+    max-width: calc(100% / 1);
+    padding: 30px;
+  }
+  .creator-page,
+  .contact-content {
+    max-width: 100%;
+    padding: 30px;
+  }
+  .contact-content input {
+    font-size: 14px;
+    padding: 8px 30px;
+    min-width: 300px;
+  }
+  .contact-content button img {
+    width: 20px;
+    height: 20px;
+  }
+  footer .footer-icons ul li img {
+    height: 40px;
+  }
+}
