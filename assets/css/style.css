@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #28e28b;
+  --secondary-color: #fff;
+  --color-buttons: #222121;
+}
 body {
   height: 100vh;
 }
@@ -11,11 +16,11 @@ ul li {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary-color);
 }
 header {
   width: 100%;
-  background-color: #28e28b;
+  background-color: var(--primary-color);
 }
 .container-menu {
   max-width: 1140px;
@@ -48,7 +53,7 @@ header .social img {
   width: 30px;
   height: 30px;
   padding: 6px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border: none;
   border-radius: 50%;
 }
@@ -81,11 +86,11 @@ header .social img {
 }
 .buttons-page a {
   display: inline-block;
-  border: 1px solid #222121;
+  border: 1px solid var(--color-buttons);
   padding: 10px 35px;
   background: transparent;
   margin-right: 30px;
-  color: #222121;
+  color: var(--color-buttons);
   text-transform: uppercase;
 }
 .buttons-page a img {
@@ -106,12 +111,15 @@ header .social img {
 }
 .footer-banner span img {
   max-height: 90px;
-  margin-right: 80px;
-  min-height: 50px;
+  margin-right: 100px;
+  min-height: 60px;
 }
 .footer-banner span img svg {
   color: #cac3c3;
   height: 100%;
+}
+#logo-google {
+  max-width: 70px;
 }
 .about-page {
   display: flex;
@@ -152,7 +160,7 @@ header .social img {
 /*Serviços*/
 
 .services {
-  background: #28e28b;
+  background: var(--primary-color);
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -168,7 +176,7 @@ header .social img {
   transition: 0.4s;
 }
 .service i {
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 34px;
   margin-bottom: 30px;
 }
@@ -177,16 +185,16 @@ header .social img {
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .service p {
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
 }
-
-.creator-page {
+/*testemonials*/
+.testemonials {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,17 +205,17 @@ header .social img {
   max-width: 80%;
   padding: 100px;
 }
-.creator-page p {
+.testemonials p {
   line-height: 28px;
   font-size: 18px;
 }
-.creator-page h3 {
+.testemonials h3 {
   text-transform: uppercase;
   padding-top: 30px;
 }
 .contact {
-  background-color: #28e28b;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   width: 100%;
 }
 .contact-content {
@@ -245,22 +253,22 @@ header .social img {
 .contact-content button img {
   width: 25px;
   height: 25px;
-  color: #28e28b;
+  color: var(--primary-color);
 }
 ::-webkit-input-placeholder {
-  color: #28e28b;
+  color: var(--primary-color);
 }
 
 :-moz-placeholder {
-  color: #28e28b;
+  color: var(--primary-color);
 }
 
 ::-moz-placeholder {
-  color: #28e28b;
+  color: var(--primary-color);
 }
 
 :-ms-input-placeholder {
-  color: #28e28b;
+  color: var(--primary-color);
 }
 footer {
   display: flex;
@@ -320,7 +328,9 @@ footer .footer-rights span {
   }
   .buttons-page a {
     margin-bottom: 30px;
-    padding: 8px 20px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #f6f1f1ca;
   }
   .footer-banner span img {
     max-height: 60px;
@@ -343,7 +353,7 @@ footer .footer-rights span {
     max-width: calc(100% / 1);
     padding: 30px;
   }
-  .creator-page,
+  .testemonials,
   .contact-content {
     max-width: 100%;
     padding: 30px;
