@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --primary-color: #28e28b;
+  --primary-color: #43c27b;
   --secondary-color: #fff;
   --color-buttons: #222121;
 }
@@ -64,9 +64,10 @@ header .social img {
   overflow: hidden;
 }
 .banner {
+  padding-top: 50px;
   height: calc(100% - 80px);
-  background-image: url(../img/banner-page.png);
-  background-position: center;
+  background-image: url(../img/banner.jpg);
+  background-position: top;
   background-size: cover;
   opacity: 8;
 }
@@ -121,6 +122,7 @@ header .social img {
 #logo-google {
   max-width: 70px;
 }
+/*About*/
 .about-page {
   display: flex;
   justify-content: space-between;
@@ -128,13 +130,13 @@ header .social img {
   padding: 60px 10px;
 }
 .img-about {
-  max-width: 40%;
+  max-width: 45%;
 }
 .img-about img {
-  max-width: 90%;
+  max-width: 100%;
 }
 .content-about {
-  max-width: 55%;
+  max-width: 50%;
 }
 .content-about h2 {
   font-size: 35px;
@@ -330,8 +332,8 @@ footer .footer-rights span {
     margin-bottom: 30px;
     padding: 8px 12px;
     font-size: 14px;
-    background-color: #f6f1f1ca;
   }
+
   .footer-banner span img {
     max-height: 60px;
     margin-right: 40px;
@@ -342,7 +344,7 @@ footer .footer-rights span {
   }
   .content-about {
     padding: 30px;
-    max-width: 90%;
+    min-width: 90%;
   }
   .content-about h2 {
     font-size: 25px;
